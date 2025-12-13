@@ -56,7 +56,7 @@ const Team = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-300  to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
@@ -67,13 +67,13 @@ const Team = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium mb-6">
+            <span className="inline-block bg-white/10 backdrop-blur-sm border border-blue-900 rounded-full px-4 py-2 text-blue-900 text-sm font-medium mb-6">
               Our Team
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6">
               40 Years of Leadership
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
               Meet the experienced professionals behind Investment Property Trust. 
               Our team combines decades of expertise with a passion for real estate excellence.
             </p>
@@ -119,7 +119,7 @@ const Team = () => {
       </section>
 
       {/* Team Grid */}
-      <section className="py-24">
+      {/* <section className="py-24">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -149,16 +149,16 @@ const Team = () => {
               >
                 <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border">
                   {/* Image */}
-                  <div className="relative aspect-square overflow-hidden">
+                  {/* <div className="relative aspect-square overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />  */}
                     
                     {/* Social Links (visible on hover) */}
-                    <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {/* <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <button className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                         <Linkedin className="w-5 h-5" />
                       </button>
@@ -166,10 +166,10 @@ const Team = () => {
                         <Mail className="w-5 h-5" />
                       </button>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Content */}
-                  <div className="p-6">
+                  {/* <div className="p-6">
                     <h3 className="text-xl font-bold text-card-foreground mb-1">
                       {member.name}
                     </h3>
@@ -185,7 +185,7 @@ const Team = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-24 bg-secondary">

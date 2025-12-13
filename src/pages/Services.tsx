@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { 
-  Home, 
-  Factory, 
-  Building, 
-  Building2, 
-  Users, 
+import {
+  Home,
+  Factory,
+  Building,
+  Building2,
+  Users,
   ArrowRight,
-  CheckCircle 
+  CheckCircle
 } from "lucide-react";
 
 const services = [
@@ -85,9 +85,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-300  to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
@@ -98,14 +98,14 @@ const Services = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium mb-6">
+            <span className="inline-block bg-white/10 backdrop-blur-sm border border-blue-900 rounded-full px-4 py-2 text-blue-900 text-sm font-medium mb-6">
               Our Services
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6">
               Comprehensive Real Estate Solutions
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed">
-              From residential developments to industrial warehouses, we deliver 
+            <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
+              From residential developments to industrial warehouses, we deliver
               full-service real estate expertise backed by over 40 years of experience.
             </p>
           </motion.div>
@@ -123,9 +123,8 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
               >
                 {/* Content */}
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>

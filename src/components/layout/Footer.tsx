@@ -85,7 +85,7 @@ const Footer = () => {
 
               <div className="flex items-center space-x-3 text-background/70">
                 <MapPin size={18} />
-                <span>Pacific Northwest</span>
+                <span>USA</span>
               </div>
             </div>
           </div>
@@ -98,7 +98,8 @@ const Footer = () => {
               © {currentYear} Investment Property Trust. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-background/60">
-              <span>40+ Years of Excellence</span>
+              <Link to="/team" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
+              <Link to="/contact" className="text-background/70 hover:text-primary transition-colors">Terms and Conditions</Link>
             </div>
           </div>
         </div>

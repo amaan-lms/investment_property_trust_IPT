@@ -2,28 +2,31 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import res from "@/assets/residential.jpg"
+import war from "@/assets/warehouse.jpg"
+import la from "@/assets/la2.jpg"
 
 const featuredProjects = [
   {
     id: 1,
-    title: "Lakeside Residential Complex",
+    title: "Residential",
     category: "Residential",
-    location: "Bellingham, WA",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+    // location: "Bellingham, WA",
+    image:res
   },
   {
     id: 2,
-    title: "Pacific Distribution Center",
+    title: "Warehouse",
     category: "Industrial",
-    location: "Seattle, WA",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
+    // location: "Seattle, WA",
+    image: war
   },
   {
     id: 3,
-    title: "Downtown Office Tower",
+    title: "Commercial",
     category: "Commercial",
-    location: "Portland, OR",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
+    // location: "Portland, OR",
+    image: la
   },
 ];
 
@@ -92,10 +95,10 @@ const ProjectPreview = () => {
                     <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-foreground transition-colors">
                       {project.title}
                     </h3>
-                    <div className="flex items-center text-white/80 text-sm">
+                    {/* <div className="flex items-center text-white/80 text-sm">
                       <MapPin className="w-4 h-4 mr-1" />
                       {project.location}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Link>

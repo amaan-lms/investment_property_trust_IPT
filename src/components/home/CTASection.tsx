@@ -12,7 +12,7 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative bg-primary rounded-3xl p-12 md:p-16 lg:p-20 overflow-hidden"
+          className="relative bg-gray-200 rounded-3xl p-12 md:p-16 lg:p-20 overflow-hidden"
         >
           {/* Background Elements */}
           <div className="absolute inset-0 opacity-10">
@@ -21,10 +21,10 @@ const CTASection = () => {
           </div>
 
           <div className="relative z-10 max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
               Ready to Start Your Next Real Estate Project?
             </h2>
-            <p className="text-white/80 text-lg md:text-xl mb-10 leading-relaxed">
+            <p className="text-gray-500 text-lg md:text-xl mb-10 leading-relaxed">
               Let our 40+ years of experience guide your investment. Contact us 
               today to discuss your residential, commercial, or industrial real estate needs.
             </p>
@@ -44,10 +44,10 @@ const CTASection = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 bg-transparent text-base px-8 py-6 rounded-lg font-semibold"
+                className="border-2 border-white text-white  bg-blue-800 text-base px-8 py-6 rounded-lg font-semibold"
               >
                 <a href="tel:360-303-9000">
-                  <Phone className="mr-2 w-5 h-5" />
+                  <Phone className="mr-2 w-5 h-5 " />
                   360-303-9000
                 </a>
               </Button>

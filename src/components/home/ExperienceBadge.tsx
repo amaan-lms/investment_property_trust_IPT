@@ -30,7 +30,7 @@ const stats = [
 
 const ExperienceBadge = () => {
   return (
-    <section className="py-24 gradient-hero relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-white via-blue-50 to-blue-200 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
@@ -46,14 +46,14 @@ const ExperienceBadge = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium mb-6">
+          <span className="inline-block bg-blue-600 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium mb-6">
             Why Investment Property Trust
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
             Four Decades of Building Trust
           </h2>
-          <p className="text-white/80 text-lg leading-relaxed">
-            With over 40 years in real estate acquisition, development, leasing, 
+          <p className="text-blue-600 text-lg leading-relaxed">
+            With over 40 years in real estate acquisition, development, leasing,
             and property management, we bring unmatched expertise to every project.
           </p>
         </motion.div>
@@ -67,19 +67,37 @@ const ExperienceBadge = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 text-center hover:bg-white/15 transition-colors"
+              className="
+                            bg-white
+                            rounded-2xl
+                            p-8
+                            text-center
+                            shadow-lg shadow-blue-300/40
+                            hover:shadow-xl
+                            hover:bg-gray-50
+                            hover:-translate-y-1
+                            transition-all
+                          "
             >
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <stat.icon className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <stat.icon className="w-8 h-8 text-blue-600" />
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+
+              <div className="text-3xl md:text-4xl font-bold text-blue-900 mb-2">
                 {stat.value}
               </div>
-              <div className="text-white font-semibold mb-2">{stat.label}</div>
-              <p className="text-white/70 text-sm">{stat.description}</p>
+
+              <div className="text-blue-800 font-semibold mb-2">
+                {stat.label}
+              </div>
+
+              <p className="text-blue-700 text-sm">
+                {stat.description}
+              </p>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );

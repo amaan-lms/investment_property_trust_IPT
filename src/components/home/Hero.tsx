@@ -118,7 +118,7 @@ const Hero = () => {
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">
-                  500+
+                  50+
                 </div>
                 <div className="text-xs md:text-sm text-slate-100/70 mt-1">
                   Properties Managed
@@ -181,7 +181,7 @@ const Hero = () => {
 
         <div className="text-center group-hover:scale-105 transition-transform duration-300">
           <div className="text-5xl font-black bg-gradient-to-r from-sky-400 to-sky-200 bg-clip-text text-transparent drop-shadow-lg mb-2">
-            500+
+            50+
           </div>
           <div className="text-xs uppercase tracking-[0.2em] bg-gradient-to-r from-sky-400/80 to-sky-300/80 bg-clip-text text-transparent">
             PROPERTIES

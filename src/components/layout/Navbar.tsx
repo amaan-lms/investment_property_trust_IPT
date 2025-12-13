@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo22.png"
+import logo from "@/assets/logo33.png"
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -43,8 +43,8 @@ export const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
         className={` fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? "bg-white/90 backdrop-blur-md shadow-lg" // changed color here
-            : "bg-transparent"
+          ? "bg-white/90 backdrop-blur-md shadow-lg" // changed color here
+          : "bg-transparent"
           }`}
 
       >
@@ -56,15 +56,16 @@ export const Navbar = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-12 h-12 lg:w-12 lg:h-12 object-contain mx-auto "
+                className="pt-4 mb-4 w-[16vw] max-w-[180px] sm:max-w-[220px] lg:max-w-[80px] h-auto object-contain mx-auto"
               />
 
+              {/* 
               <span
                 className={`text-base lg:text-2xl font-bold tracking-tight transition-colors ${isScrolled ? "text-primary" : "text-white"
                   }`}
               >
                 Investment Property Trust
-              </span>
+              </span> */}
 
             </Link>
 
@@ -74,7 +75,7 @@ export const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`relative text-sm font-medium transition-colors hover:text-blue-500 ${isScrolled ? "text-foreground" : "text-white"
+                  className={`relative text-sm font-medium transition-colors hover:text-blue-900 ${isScrolled ? "text-foreground" : "text-blue-600"
                     } ${location.pathname === link.path ? "text-primary" : ""}`}
                 >
                   {link.name}

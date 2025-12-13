@@ -32,7 +32,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    value: "Pacific Northwest",
+    value: "USA",
     link: null,
   },
   {
@@ -73,7 +73,7 @@ const Contact = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-300  to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-10 w-72 h-72 bg-white rounded-full blur-3xl" />
         </div>
@@ -84,13 +84,13 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <span className="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white/90 text-sm font-medium mb-6">
+            <span className="inline-block bg-white/10 backdrop-blur-sm border border-blue-900 rounded-full px-4 py-2 text-blue-900 text-sm font-medium mb-6">
               Contact Us
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 mb-6">
               Get in Touch
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
               Have a question or ready to discuss your next real estate project? 
               Our team is here to help you every step of the way.
             </p>
