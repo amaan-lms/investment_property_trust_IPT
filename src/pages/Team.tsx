@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail,ArrowRight, Phone } from "lucide-react";
 
 const teamMembers = [
   {
@@ -54,7 +54,7 @@ const Team = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-blue-300  to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -74,7 +74,7 @@ const Team = () => {
               40 Years of Leadership
             </h1>
             <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
-              Meet the experienced professionals behind Investment Property Trust. 
+              Meet the experienced professionals behind Investment Property Trust.
               Our team combines decades of expertise with a passion for real estate excellence.
             </p>
           </motion.div>
@@ -82,7 +82,7 @@ const Team = () => {
       </section>
 
       {/* Leadership Message */}
-      <section className="py-24 bg-secondary">
+      <section className="py-20 bg-white pb-5">
         <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -95,9 +95,9 @@ const Team = () => {
               Building Trust Through Excellence
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              For over four decades, Investment Property Trust has been built on a foundation 
-              of integrity, expertise, and dedication to our clients. Our team brings together 
-              diverse talents and perspectives, united by a shared commitment to delivering 
+              For over four decades, Investment Property Trust has been built on a foundation
+              of integrity, expertise, and dedication to our clients. Our team brings together
+              diverse talents and perspectives, united by a shared commitment to delivering
               exceptional results in every real estate venture we undertake.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-center">
@@ -149,16 +149,16 @@ const Team = () => {
               >
                 <div className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border">
                   {/* Image */}
-                  {/* <div className="relative aspect-square overflow-hidden">
+      {/* <div className="relative aspect-square overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />  */}
-                    
-                    {/* Social Links (visible on hover) */}
-                    {/* <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+
+      {/* Social Links (visible on hover) */}
+      {/* <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <button className="w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                         <Linkedin className="w-5 h-5" />
                       </button>
@@ -168,8 +168,8 @@ const Team = () => {
                     </div>
                   </div> */}
 
-                  {/* Content */}
-                  {/* <div className="p-6">
+      {/* Content */}
+      {/* <div className="p-6">
                     <h3 className="text-xl font-bold text-card-foreground mb-1">
                       {member.name}
                     </h3>
@@ -188,27 +188,54 @@ const Team = () => {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-24 bg-secondary">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="py-20 bg-background ">
+        <div className="container mx-auto px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-2xl mx-auto"
+            className="relative bg-gray-200 rounded-3xl p-12 md:p-16 lg:p-20 overflow-hidden"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Work With Our Team
-            </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              Ready to discuss your real estate goals? Our experienced team is here to help.
-            </p>
-            <Button asChild size="lg">
-              <Link to="/contact">
-                Get in Touch
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </Button>
+            {/* Background Elements */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
+              <div className="absolute bottom-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
+            </div>
+
+            <div className="relative z-10 max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
+                Ready to Start Your Next Real Estate Project?
+              </h2>
+              <p className="text-gray-500 text-lg md:text-xl mb-10 leading-relaxed">
+                Let our 40+ years of experience guide your investment. Contact us
+                today to discuss your residential, commercial, or industrial real estate needs.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 text-base px-8 py-6 rounded-lg font-semibold"
+                >
+                  <Link to="/contact">
+                    Contact Us
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white text-white  bg-blue-800 text-base px-8 py-6 rounded-lg font-semibold"
+                >
+                  <a href="tel:360-303-9000">
+                    <Phone className="mr-2 w-5 h-5 " />
+                    360-303-9000
+                  </a>
+                </Button>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>

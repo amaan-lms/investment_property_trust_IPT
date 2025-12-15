@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { 
-  Phone, 
-  Globe, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Globe,
+  MapPin,
+  Clock,
   Send,
   Building2,
   CheckCircle
@@ -26,8 +26,8 @@ const contactInfo = [
   {
     icon: Globe,
     title: "Website",
-    value: "investmentpropertytrust.com",
-    link: "https://investmentpropertytrust.com",
+    value: "helipart.com",
+    link: "https://helipart.com",
   },
   {
     icon: MapPin,
@@ -71,7 +71,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-blue-300  to-indigo-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -91,7 +91,7 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-gray-900 text-lg md:text-xl leading-relaxed">
-              Have a question or ready to discuss your next real estate project? 
+              Have a question or ready to discuss your next real estate project?
               Our team is here to help you every step of the way.
             </p>
           </motion.div>
@@ -200,7 +200,7 @@ const Contact = () => {
                   Contact Information
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Reach out to us directly or visit our office. We're always happy to discuss 
+                  Reach out to us directly or visit our office. We're always happy to discuss
                   your real estate goals.
                 </p>
               </div>
@@ -221,7 +221,7 @@ const Contact = () => {
                     </div>
                     <h3 className="font-semibold text-foreground mb-1">{info.title}</h3>
                     {info.link ? (
-                      <a 
+                      <a
                         href={info.link}
                         target={info.link.startsWith("http") ? "_blank" : undefined}
                         rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -238,14 +238,15 @@ const Contact = () => {
 
               {/* Map Placeholder */}
               <div className="bg-secondary rounded-2xl overflow-hidden h-64 relative">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-muted-foreground/30 mx-auto mb-3" />
-                    <p className="text-muted-foreground">Map Integration</p>
-                    <p className="text-muted-foreground/60 text-sm">Pacific Northwest Region</p>
-                  </div>
-                </div>
+                <iframe
+                  title="Office Location Map"
+                  src="https://www.google.com/maps?q=2150+Meridian+Blvd,+Unit+A,+Minden,+NV+89423&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
+
 
               {/* Trust Badge */}
               <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
@@ -258,7 +259,7 @@ const Contact = () => {
                       40+ Years of Trust
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      Investment Property Trust has been serving clients across the 
+                      Investment Property Trust has been serving clients across the
                       Pacific Northwest since 1984. Your success is our priority.
                     </p>
                   </div>
@@ -283,7 +284,7 @@ const Contact = () => {
               Why Work With Us
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              When you partner with Investment Property Trust, you get more than just 
+              When you partner with Investment Property Trust, you get more than just
               real estate services—you get a dedicated team committed to your success.
             </p>
           </motion.div>

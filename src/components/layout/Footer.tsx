@@ -80,7 +80,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 text-background/70 hover:text-primary transition-colors"
               >
                 <Globe size={18} />
-                <span>investmentpropertytrust.com</span>
+                <span>helipart.com</span>
               </a>
 
               <div className="flex items-center space-x-3 text-background/70">
@@ -98,8 +98,8 @@ const Footer = () => {
               © {currentYear} Investment Property Trust. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-background/60">
-              <Link to="/team" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link to="/contact" className="text-background/70 hover:text-primary transition-colors">Terms and Conditions</Link>
+              <Link to="/PrivacyPolicy" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
+              <Link to="/TermsAndCondition" className="text-background/70 hover:text-primary transition-colors">Terms and Conditions</Link>
             </div>
           </div>
         </div>
