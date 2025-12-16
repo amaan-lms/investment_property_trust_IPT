@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FileText, Shield, Lock, Eye, User, Database, Globe, Mail, Phone, CheckCircle, AlertCircle, Server, ShieldCheck, Users, Cookie, Bell } from "lucide-react";
 import { useEffect } from "react";
 
-const PrivacyPolicy = () => {
+const Privacypolicy = () => {
     // Scroll to section if hash is present in URL
     useEffect(() => {
         const hash = window.location.hash;
@@ -659,4 +659,4 @@ const PrivacyPolicy = () => {
     );
 };
 
-export default PrivacyPolicy;
+export default Privacypolicy;

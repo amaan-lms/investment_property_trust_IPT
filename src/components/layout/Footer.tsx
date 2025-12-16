@@ -98,7 +98,7 @@ const Footer = () => {
               © {currentYear} Investment Property Trust. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-background/60">
-              <Link to="/" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
+              <Link to="/Privacypolicy" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
               <Link to="/TermsAndCondition" className="text-background/70 hover:text-primary transition-colors">Terms and Conditions</Link>
             </div>
           </div>
