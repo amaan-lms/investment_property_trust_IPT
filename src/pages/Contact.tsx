@@ -99,7 +99,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24">
+      <section className="py-24 pb-0">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
@@ -236,20 +236,11 @@ const Contact = () => {
                 ))}
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-secondary rounded-2xl overflow-hidden h-64 relative">
-                <iframe
-                  title="Office Location Map"
-                  src="https://www.google.com/maps?q=2150+Meridian+Blvd,+Unit+A,+Minden,+NV+89423&output=embed"
-                  className="w-full h-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+
 
 
               {/* Trust Badge */}
-              <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
+              {/* <div className="bg-primary/5 border border-primary/10 rounded-xl p-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <Building2 className="w-6 h-6 text-primary-foreground" />
@@ -264,11 +255,28 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
       </section>
+
+
+      {/* Map Placeholder */}
+
+      <section className="p-16">
+        <div className="bg-secondary rounded-2xl overflow-hidden h-96 relative">
+          <iframe
+            title="Office Location Map"
+            src="https://www.google.com/maps?q=2150+Meridian+Blvd,+Unit+A,+Minden,+NV+89423&output=embed"
+            className="w-full h-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </section>
+
+
 
       {/* Why Contact Us */}
       <section className="py-24 bg-secondary">

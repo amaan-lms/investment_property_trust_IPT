@@ -112,8 +112,8 @@ const HeroLight = () => {
                 size="lg"
                 className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-6 rounded-lg font-semibold shadow-2xl shadow-blue-500/40 group"
               >
-                <Link to="/contact" className="flex items-center gap-2">
-                  Start Your Investment
+                <Link to="/services" className="flex items-center gap-2">
+                  Explore Our Services
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -124,7 +124,7 @@ const HeroLight = () => {
                 variant="outline"
                 className="border border-slate-600 text-black hover:bg-slate-800/50 hover:border-blue-400 px-8 py-6 rounded-lg font-semibold backdrop-blur transition-all hover:text-white"
               >
-                <Link to="/portfolio">View Portfolio</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </motion.div>
 
