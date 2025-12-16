@@ -80,7 +80,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 text-background/70 hover:text-primary transition-colors"
               >
                 <Globe size={18} />
-                <span>helipart.com</span>
+                <span>investmentpropertytrust.com</span>
               </a>
 
               <div className="flex items-center space-x-3 text-background/70">

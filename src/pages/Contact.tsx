@@ -26,8 +26,8 @@ const contactInfo = [
   {
     icon: Globe,
     title: "Website",
-    value: "helipart.com",
-    link: "https://helipart.com",
+    value: "investmentpropertytrust.com",
+    link: "https://investmentpropertytrust.com",
   },
   {
     icon: MapPin,
