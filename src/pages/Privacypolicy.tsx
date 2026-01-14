@@ -564,7 +564,7 @@ const Privacypolicy = () => {
             </section>
 
             {/* Cookie Preferences */}
-            <section className="py-12 bg-gray-50 border-y">
+            {/* <section className="py-12 bg-gray-50 border-y">
                 <div className="container mx-auto px-4 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -613,7 +613,7 @@ const Privacypolicy = () => {
                         </div>
                     </motion.div>
                 </div>
-            </section>
+            </section> */}
 
             {/* CTA Section */}
             <section className="py-16 bg-secondary">
