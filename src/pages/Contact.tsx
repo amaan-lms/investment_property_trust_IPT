@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "360-303-9000",
-    link: "tel:360-303-9000",
+    value: "775-552-9163",
+    link: "tel:775-552-9163",
   },
   {
     icon: Mail,
@@ -275,7 +275,7 @@ const Contact = () => {
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                       <info.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-semibold text-foreground mb-1">
+                    <h3 className="font-bold text-foreground mb-1">
                       {info.title}
                     </h3>
                     {info.link ? (
@@ -289,12 +289,12 @@ const Contact = () => {
                             ? "noopener noreferrer"
                             : undefined
                         }
-                        className="text-muted-foreground hover:text-primary transition-colors"
+                        className="text-muted-foreground font-semibold hover:text-primary transition-colors"
                       >
                         {info.value}
                       </a>
                     ) : (
-                      <span className="text-muted-foreground">{info.value}</span>
+                      <span className="text-muted-foreground font-semibold">{info.value}</span>
                     )}
                   </motion.div>
                 ))}

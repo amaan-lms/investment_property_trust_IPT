@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo33.png"
+import logo from "@/assets/logo33.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -46,9 +46,8 @@ export const Navbar = () => {
     ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-lg scrolled" : "bg-transparent"}
   `}
       >
-        <nav className="container mx-auto px-4 lg:px-8">
+        <nav className="container mx-auto px-4 lg:px-5">
           <div className="grid grid-cols-2 lg:grid-cols-3 items-center h-20">
-
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               {/* <img
@@ -64,17 +63,17 @@ export const Navbar = () => {
               >
                 Investment Property Trust
               </span> */}
-
             </Link>
 
             {/* Desktop Links */}
-            <div className="hidden lg:flex items-center space-x-12">
+            <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`relative text-sm font-medium transition-colors hover:text-blue-900 ${isScrolled ? "text-foreground" : "text-blue-900"
-                    } ${location.pathname === link.path ? "text-primary" : ""}`}
+                  className={`relative text-sm font-medium transition-colors hover:text-blue-900 ${
+                    isScrolled ? "text-foreground" : "text-blue-900"
+                  } ${location.pathname === link.path ? "text-primary" : ""}`}
                 >
                   {link.name}
                   {location.pathname === link.path && (
@@ -95,8 +94,9 @@ export const Navbar = () => {
             <div className="flex items-center justify-end">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className={`lg:hidden p-2 transition-colors ${isScrolled ? "text-foreground" : "text-white"
-                  }`}
+                className={`lg:hidden p-2 transition-colors ${
+                  isScrolled ? "text-foreground" : "text-white"
+                }`}
               >
                 {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -138,10 +138,11 @@ export const Navbar = () => {
                   >
                     <Link
                       to={link.path}
-                      className={`block text-lg font-medium py-2 transition-colors hover:text-primary ${location.pathname === link.path
-                        ? "text-primary"
-                        : "text-foreground"
-                        }`}
+                      className={`block text-lg font-medium py-2 transition-colors hover:text-primary ${
+                        location.pathname === link.path
+                          ? "text-primary"
+                          : "text-foreground"
+                      }`}
                     >
                       {link.name}
                     </Link>

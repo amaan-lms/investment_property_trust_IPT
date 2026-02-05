@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Award, Users } from "lucide-react";
-import hero from "@/assets/hero.png";
-import logo from "@/assets/logo33.png";
+import { ArrowRight, TrendingUp, Award, Star, Users } from "lucide-react";
+import hero from "@/assets/hero1.png";
+import logo from "@/assets/logo22.png";
 
 const HeroLight = () => {
   return (
@@ -54,22 +54,26 @@ const HeroLight = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="mb-8 flex justify-center lg:justify-start lg:pl-32 lg:pt-12"
+              className=" flex flex-col items-center lg:items-start lg:pl-24"
             >
               <img
                 src={logo}
                 alt="Investment Property Trust Logo"
                 className="
-                              h-24        /* MOBILE (bigger) */
-                              sm:h-28     /* small tablets */
-                              md:h-32     /* tablets */
-                              lg:h-36     /* desktop */
-                              xl:h-48     /* large desktop */
-                              w-auto
-                            "
+      h-24
+      sm:h-28
+      md:h-32
+      lg:h-36
+      xl:h-48
+      w-auto
+    "
               />
-            </motion.div>
 
+              
+            </motion.div>
+<h3 className="mt-2 mb-5 text-2xl sm:text-3xl font-semibold font-serif text-blue-900 leading-tight lg:pl-12">
+                Investment Property Trust
+              </h3>
             {/* Subheading */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -97,10 +101,25 @@ const HeroLight = () => {
                 },
                 {
                   icon: TrendingUp,
-                  label: "50+ Assets",
+                  label: "20+ Assets",
                   text: "Under Management",
                 },
-                { icon: Users, label: "100%", text: "Client Satisfaction" },
+                {
+                  icon: Users,
+                  label: (
+                    <div className="flex items-center justify-center gap-1 text-Black mb-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          size={16}
+                          fill="currentColor"
+                          stroke="currentColor"
+                        />
+                      ))}
+                    </div>
+                  ),
+                  text: "Client Satisfaction",
+                },
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
@@ -146,7 +165,7 @@ const HeroLight = () => {
             </motion.div>
 
             {/* Trust Text */}
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
@@ -154,7 +173,7 @@ const HeroLight = () => {
             >
               Trusted by institutional investors and high-net-worth individuals
               worldwide
-            </motion.p>
+            </motion.p> */}
           </motion.div>
 
           {/* RIGHT IMAGE */}
@@ -183,7 +202,17 @@ const HeroLight = () => {
                     <TrendingUp className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-slate-900 font-bold">100%</div>
+                    <div className="flex items-center gap-1 text-black mb-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          size={16}
+                          fill="currentColor"
+                          stroke="currentColor"
+                        />
+                      ))}
+                    </div>
+
                     <div className="text-xs text-slate-600">
                       Client Satisfaction
                     </div>
@@ -203,3 +232,177 @@ const HeroLight = () => {
 };
 
 export default HeroLight;
+
+// import { motion } from "framer-motion";
+// import { Link } from "react-router-dom";
+// import { Button } from "@/components/ui/button";
+// import { ArrowRight, TrendingUp, Award, Star, Users } from "lucide-react";
+// import hero from "@/assets/hero.png";
+// import logo from "@/assets/logo33.png";
+
+// const HeroLight = () => {
+//   return (
+//     <section
+//       id="hero"
+//       className="relative min-h-screen flex items-center overflow-hidden bg-white"
+//     >
+//       {/* Refined Gradient Background */}
+//       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-100 via-slate-50 to-white" />
+
+//       {/* Subtle Grid Background */}
+//       <div
+//         className="absolute inset-0 opacity-[0.15]"
+//         style={{
+//           backgroundImage: `linear-gradient(90deg, #3b82f6 1px, transparent 1px), linear-gradient(#3b82f6 1px, transparent 1px)`,
+//           backgroundSize: "60px 60px",
+//         }}
+//       />
+
+//       {/* Decorative Blur Orbs */}
+//       <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-400/20 rounded-full blur-[120px]" />
+//       <div className="absolute top-1/2 right-0 w-80 h-80 bg-sky-300/30 rounded-full blur-[100px]" />
+
+//       <div className="container mx-auto px-6 lg:px-12 relative z-10 py-24">
+//         <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+//           {/* LEFT CONTENT: Focus on Text & CTA */}
+//           <motion.div
+//             initial={{ opacity: 0, x: -40 }}
+//             animate={{ opacity: 1, x: 0 }}
+//             transition={{ duration: 0.8, ease: "easeOut" }}
+//             className="text-center lg:text-left order-2 lg:order-1"
+//           >
+//             <motion.h1
+//                initial={{ opacity: 0, y: 20 }}
+//                animate={{ opacity: 1, y: 0 }}
+//                transition={{ delay: 0.2 }}
+//                className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-[1.1]"
+//             >
+//               Institutional <span className="text-blue-600">Expertise</span> in Real Estate
+//             </motion.h1>
+
+//             <motion.p
+//               initial={{ opacity: 0, y: 20 }}
+//               animate={{ opacity: 1, y: 0 }}
+//               transition={{ delay: 0.4 }}
+//               className="text-lg md:text-xl text-slate-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+//             >
+//               Four decades of transforming opportunities into profitable assets through
+//               strategic development and portfolio management.
+//             </motion.p>
+//  {/* Trust Indicators */}
+//              <motion.div
+//                initial={{ opacity: 0, y: 20 }}
+//                animate={{ opacity: 1, y: 0 }}
+//                transition={{ delay: 0.5 }}
+//                className="flex flex-col sm:flex-row gap-6 mb-10"
+//              >
+//                {[
+//                  {
+//                    icon: Award,
+//                    label: "40+ Years",
+//                    text: "Industry Leadership",
+//                  },
+//                  {
+//                    icon: TrendingUp,
+//                    label: "20+ Assets",
+//                    text: "Under Management",
+//                  },
+//                  {
+//                    icon: Users,
+//                    label: (
+//                      <div className="flex items-center justify-center gap-1 text-Black mb-1">
+//                        {[...Array(5)].map((_, i) => (
+//                          <Star
+//                            key={i}
+//                            size={16}
+//                            fill="currentColor"
+//                            stroke="currentColor"
+//                          />
+//                        ))}
+//                      </div>
+//                    ),
+//                    text: "Client Satisfaction",
+//                  },
+//                ].map((item, i) => {
+//                  const Icon = item.icon;
+//                  return (
+//                    <div key={i} className="flex items-center gap-3">
+//                      <Icon className="w-6 h-6 text-blue-600" />
+//                      <div>
+//                        <div className="font-bold text-slate-900">
+//                          {item.label}
+//                        </div>
+//                        <div className="text-sm text-slate-600">{item.text}</div>
+//                      </div>
+//                    </div>
+//                  );
+//                })}
+//              </motion.div>
+//             <motion.div
+//               initial={{ opacity: 0, y: 20 }}
+//               animate={{ opacity: 1, y: 0 }}
+//               transition={{ delay: 0.6 }}
+//               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+//             >
+//               <Button
+//                 asChild
+//                 size="lg"
+//                 className="bg-blue-700 hover:bg-blue-800 text-white px-10 py-7 rounded-xl font-bold shadow-lg shadow-blue-200 group transition-all"
+//               >
+//                 <Link to="/services" className="flex items-center gap-2 text-lg">
+//                   Explore Services
+//                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+//                 </Link>
+//               </Button>
+
+//               <Button
+//                 asChild
+//                 size="lg"
+//                 variant="outline"
+//                 className="border-2 border-slate-200 text-slate-700 hover:bg-slate-50 px-10 py-7 rounded-xl font-bold text-lg transition-all"
+//               >
+//                 <Link to="/contact">Contact Us</Link>
+//               </Button>
+//             </motion.div>
+//           </motion.div>
+
+//           {/* RIGHT CONTENT: The "Mega Logo" Section */}
+//           <motion.div
+//             initial={{ opacity: 0, scale: 0.9 }}
+//             animate={{ opacity: 1, scale: 1 }}
+//             transition={{ duration: 1, ease: "easeOut" }}
+//             className="relative flex justify-center items-center order-1 lg:order-2"
+//           >
+//             {/* The Main Logo with Deep Blue Shadow */}
+//             <div className="relative z-10 group">
+//               <motion.img
+//                 src={logo}
+//                 alt="Investment Property Trust Logo"
+//                 animate={{ y: [0, -15, 0] }}
+//                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+//                 className="
+//                   w-full
+//                   max-w-[320px]   /* Mobile size */
+//                   sm:max-w-[400px] /* Tablet size */
+//                   lg:max-w-[500px] /* Desktop size */
+//                   xl:max-w-[650px] /* Extra large screens */
+//                   h-auto
+//                   drop-shadow-[0_35px_35px_rgba(29,78,216,0.45)]
+//                   filter transition-all duration-500
+//                 "
+//               />
+
+//               {/* Secondary Glow Behind Logo */}
+//               <div className="absolute inset-0 bg-blue-600/10 rounded-full blur-[80px] -z-10 scale-75" />
+//             </div>
+
+//           </motion.div>
+
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroLight;

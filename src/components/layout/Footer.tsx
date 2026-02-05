@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Phone, Globe, MapPin, ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/logo.png"
+import logo from "@/assets/logo22.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,72 +18,88 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-foreground text-background relative">
+    <footer className="bg-blue-50 text-slate-800 relative">
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-
           {/* Brand */}
-          <div className="space-y-4 text-center">
+          <div className="text-center space-y-2">
             <img
               src={logo}
-              alt="Company Logo"
-              className="w-24 h-24 object-contain mx-auto"
+              alt="Investment Property Trust Logo"
+              className="w-28 h-auto object-contain mx-auto"
             />
+            <h3 className="text-xl font-semibold font-serif text-blue-900 leading-tight m-0">
+              <span className="block">Investment</span>
+              <span className="block">Property</span>
+              <span className="block">Trust</span>
+            </h3>
 
-
-            <p className="text-background/70 leading-relaxed">
-             Over 40 years of real estate and property management expertise.
+            <p className="text-slate-600 leading-relaxed mt-2">
+              Over 40 years of real estate and property management expertise.
             </p>
           </div>
 
-
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-slate-900">
+              Quick Links
+            </h4>
             <nav className="flex flex-col space-y-2">
-              <Link to="/" className="text-background/70 hover:text-primary transition-colors">Home</Link>
-              <Link to="/services" className="text-background/70 hover:text-primary transition-colors">Services</Link>
-              <Link to="/projects" className="text-background/70 hover:text-primary transition-colors">Projects</Link>
-              <Link to="/team" className="text-background/70 hover:text-primary transition-colors">Our Team</Link>
-              <Link to="/contact" className="text-background/70 hover:text-primary transition-colors">Contact</Link>
+              {[
+                { to: "/", label: "Home" },
+                { to: "/services", label: "Services" },
+                { to: "/projects", label: "Projects" },
+                { to: "/team", label: "Our Team" },
+                { to: "/contact", label: "Contact" },
+              ].map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="text-slate-600 hover:text-primary transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
           </div>
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Our Services</h4>
-            <nav className="flex flex-col space-y-2">
-              <span className="text-background/70">Residential Development</span>
-              <span className="text-background/70">Industrial Acquisition</span>
-              <span className="text-background/70">Commercial Leasing</span>
-              <span className="text-background/70">Multi-Residential</span>
-              <span className="text-background/70">Realtor Services</span>
+            <h4 className="text-lg font-semibold text-slate-900">
+              Our Services
+            </h4>
+            <nav className="flex flex-col space-y-2 text-slate-600">
+              <span>Residential Development</span>
+              <span>Industrial Acquisition</span>
+              <span>Commercial Leasing</span>
+              <span>Multi-Residential</span>
+              <span>Realtor Services</span>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-slate-900">Contact Us</h4>
             <div className="space-y-3">
               <a
                 href="tel:360-303-9000"
-                className="flex items-center space-x-3 text-background/70 hover:text-primary transition-colors"
+                className="flex items-center space-x-3 text-slate-600 hover:text-primary transition-colors"
               >
                 <Phone size={18} />
-                <span>360-303-9000</span>
+                <span>775-552-9163</span>
               </a>
 
               <a
                 href="https://investmentpropertytrust.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-background/70 hover:text-primary transition-colors"
+                className="flex items-center space-x-3 text-slate-600 hover:text-primary transition-colors"
               >
                 <Globe size={18} />
                 <span>investmentpropertytrust.com</span>
               </a>
 
-              <div className="flex items-center space-x-3 text-background/70">
+              <div className="flex items-center space-x-3 text-slate-600">
                 <MapPin size={18} />
                 <span>USA</span>
               </div>
@@ -92,14 +108,24 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-background/10">
+        <div className="mt-12 pt-8 border-t border-slate-300">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-background/60 text-sm">
+            <p className="text-slate-500 text-sm">
               © {currentYear} Investment Property Trust. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6 text-sm text-background/60">
-              <Link to="/Privacypolicy" className="text-background/70 hover:text-primary transition-colors">Privacy Policy</Link>
-              <Link to="/TermsAndCondition" className="text-background/70 hover:text-primary transition-colors">Terms and Conditions</Link>
+            <div className="flex items-center space-x-6 text-sm">
+              <Link
+                to="/Privacypolicy"
+                className="text-slate-600 hover:text-primary transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                to="/TermsAndCondition"
+                className="text-slate-600 hover:text-primary transition-colors"
+              >
+                Terms and Conditions
+              </Link>
             </div>
           </div>
         </div>

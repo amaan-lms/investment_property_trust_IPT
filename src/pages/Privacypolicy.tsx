@@ -483,7 +483,8 @@ const Privacypolicy = () => {
                                                                 </div>
                                                                 <div className="flex items-center space-x-3">
                                                                     <Phone className="w-5 h-5 text-muted-foreground" />
-                                                                    <span className="text-foreground">360-303-9000 (ext. 2)</span>
+                                                                    <span className="text-foreground">775-552-9163
+ (ext. 2)</span>
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -46,9 +46,9 @@ const CTASection = () => {
                 variant="outline"
                 className="border-2 border-white text-white  bg-blue-800 text-base px-8 py-6 rounded-lg font-semibold"
               >
-                <a href="tel:360-303-9000">
+                <a href="tel:775-552-9163">
                   <Phone className="mr-2 w-5 h-5 " />
-                  360-303-9000
+                  775-552-9163
                 </a>
               </Button>
             </div>

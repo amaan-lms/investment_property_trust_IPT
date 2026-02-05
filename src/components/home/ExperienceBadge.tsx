@@ -52,7 +52,7 @@ const ExperienceBadge = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
             Four Decades of Building Trust
           </h2>
-          <p className="text-blue-600 text-lg leading-relaxed">
+          <p className="text-blue-900 text-lg leading-relaxed">
             With over 40 years in real estate acquisition, development, leasing,
             and property management, we bring unmatched expertise to every project.
           </p>
