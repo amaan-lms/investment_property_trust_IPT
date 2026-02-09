@@ -188,7 +188,7 @@ const TermsAndConditions = () => {
         }
     ];
 
-    const lastUpdated = "December 2025";
+    const lastUpdated = "December 2026";
 
     return (
         <div className="min-h-screen bg-background">
@@ -396,8 +396,8 @@ const TermsAndConditions = () => {
                                                             <h4 className="font-semibold text-foreground mb-4">Legal Department</h4>
                                                             <div className="space-y-3">
                                                                 <div className="flex items-center space-x-3">
-                                                                    <Globe className="w-5 h-5 text-muted-foreground" />
-                                                                    <span className="text-foreground">investmentpropertytrust.com</span>
+                                                                    <Mail className="w-5 h-5 text-muted-foreground" />
+                                                                    <span className="text-foreground">trustee@investmentpropertytrust.com</span>
                                                                 </div>
                                                                 <div className="flex items-center space-x-3">
                                                                     <Phone className="w-5 h-5 text-muted-foreground" />

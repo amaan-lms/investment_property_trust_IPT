@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Phone, Globe, MapPin, ArrowUp } from "lucide-react";
+import { Phone, Globe, MapPin, ArrowUp, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/logo22.png";
 
@@ -97,6 +97,13 @@ const Footer = () => {
               >
                 <Globe size={18} />
                 <span>investmentpropertytrust.com</span>
+              </a>
+              <a
+                href="mailto:trustee@investmentpropertytrust.com"
+                className="flex items-center space-x-3 text-slate-600 hover:text-primary transition-colors text-sm"
+              >
+                <Mail size={18} />
+                <span>trustee@investmentpropertytrust.com</span>
               </a>
 
               <div className="flex items-center space-x-3 text-slate-600">

@@ -204,7 +204,7 @@ const Privacypolicy = () => {
         }
     ];
 
-    const lastUpdated = "December 2025";
+    const lastUpdated = "December 2026";
 
     return (
         <div className="min-h-screen bg-background">
@@ -479,7 +479,7 @@ const Privacypolicy = () => {
                                                             <div className="space-y-4">
                                                                 <div className="flex items-center space-x-3">
                                                                     <Mail className="w-5 h-5 text-muted-foreground" />
-                                                                    <span className="text-foreground">privacy@investmentpropertytrust.com</span>
+                                                                    <span className="text-foreground">trustee@investmentpropertytrust.com</span>
                                                                 </div>
                                                                 <div className="flex items-center space-x-3">
                                                                     <Phone className="w-5 h-5 text-muted-foreground" />

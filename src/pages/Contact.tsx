@@ -28,8 +28,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Mail to",
-    value: "investmentpropertytrust.com",
-    link: "https://investmentpropertytrust.com",
+    value: "trustee@investmentpropertytrust.com",
+    link: "mailto:trustee@investmentpropertytrust.com",
   },
   {
     icon: MapPin,
@@ -289,7 +289,7 @@ const Contact = () => {
                             ? "noopener noreferrer"
                             : undefined
                         }
-                        className="text-muted-foreground font-semibold hover:text-primary transition-colors"
+                        className="text-muted-foreground font-semibold lg:text-sm hover:text-primary transition-colors"
                       >
                         {info.value}
                       </a>
